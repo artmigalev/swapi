@@ -10,16 +10,16 @@
     "format:check": "prettier --check .",
     "format:write": "prettier --write .",
     "preview": "vite preview",
-    "prepare": "husky && chmod ug+x .husky/*",
-    "lint-staged": {
-      "*.{js,jsx,ts,tsx}": [
-        "eslint --fix",
-        "prettier --write"
-      ],
-      "*.{json,md,yml,css,scss}": [
-        "prettier --write"
-      ]
-    }
+    "prepare": "husky && chmod ug+x .husky/*"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md,yml,css,scss}": [
+      "prettier --write"
+    ]
   },
   "dependencies": {
     "react": "^19.1.0",
