@@ -10,7 +10,7 @@
     "format:check": "prettier --check .",
     "format:write": "prettier --write .",
     "preview": "vite preview",
-    "prepare": "husky",
+    "prepare": "husky && chmod ug+x .husky/*",
     "lint-staged": {
       "*.{js,jsx,ts,tsx}": [
         "eslint --fix",
@@ -41,6 +41,7 @@
     "husky": "^9.1.7",
     "lint-staged": "^16.1.2",
     "prettier": "3.6.2",
+    "sass-embedded": "^1.89.2",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.35.1",
     "vite": "^7.0.3"
