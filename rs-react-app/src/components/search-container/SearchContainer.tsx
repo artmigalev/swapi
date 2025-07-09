@@ -12,8 +12,6 @@ export default function SearchContainer(): JSX.Element {
     type: "submit",
   };
 
-  const children = [<Input />, <Button {...btnProps} />];
-
   return (
     <div className={styles.container}>
       <FormSearch input={<Input />} button={<Button {...btnProps} />} />

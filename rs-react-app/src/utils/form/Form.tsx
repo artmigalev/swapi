@@ -1,4 +1,4 @@
-export  function Form({ children }: { children: React.ReactNode }) {
+export function Form({ children }: { children: React.ReactNode }) {
   return (
     <>
       <form className="form">{children}</form>
@@ -6,7 +6,7 @@ export  function Form({ children }: { children: React.ReactNode }) {
   );
 }
 
-export  function FormSearch({
+export function FormSearch({
   input,
   button,
 }: {
@@ -15,10 +15,10 @@ export  function FormSearch({
 }) {
   return (
     <>
-      <form className="form">{input}
+      <form className="form">
+        {input}
         {button}
       </form>
     </>
   );
 }
-
