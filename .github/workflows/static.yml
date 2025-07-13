@@ -40,8 +40,11 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./rs-react-app/dist
-          
-        
+     - name: Cache dependencies
+          uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-npm-${{ hashFiles('package-lock.json') }}
       - name: Setup Pages
       
         uses: actions/configure-pages@v5
